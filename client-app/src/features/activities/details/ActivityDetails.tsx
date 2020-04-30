@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Image, Icon, Button } from "semantic-ui-react";
+import { Card, Image, Button } from "semantic-ui-react";
 import { IActivity } from "../../../app/models/activity";
 
 interface IProps {
@@ -14,7 +14,7 @@ const ActivityDetails: React.FC<IProps> = ({
   setSelectedActivity,
 }) => {
   return (
-    <Card fuild>
+    <Card>
       <Image
         src={`/assets/categoryImages/${activity.category}.jpg`}
         wrapped
