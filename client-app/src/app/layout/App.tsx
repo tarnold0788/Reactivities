@@ -32,6 +32,8 @@ const App = () => {
       ...activities.filter((a) => a.id !== activity.id),
       activity,
     ]);
+    setSelectedActivity(activity);
+    setEditMode(false);
   };
 
   useEffect(() => {
